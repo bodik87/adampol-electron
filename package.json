@@ -1,9 +1,9 @@
 {
-  "name": "app",
+  "name": "adampol-electron",
   "version": "1.0.0",
-  "description": "An Electron application with React",
+  "description": "adampol-electron",
   "main": "./out/main/index.js",
-  "author": "example.com",
+  "author": "Bogdan Shulika",
   "homepage": "https://electron-vite.org",
   "scripts": {
     "format": "prettier --write .",
