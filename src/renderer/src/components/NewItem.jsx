@@ -19,7 +19,7 @@ export const DRIVERS_LIST = [
   { id: 11, driver: 'LEONID ZAPOROSHCHENKO' }
 ]
 
-export default function NewLocalItem({ number }) {
+export default function NewItem() {
   const [km, setKm] = useState('')
   const [price, setPrice] = useState('')
   const [timoValue, setTimoValue] = useState('')
@@ -59,7 +59,7 @@ export default function NewLocalItem({ number }) {
       {driversList && (
         <div onClick={() => setDriversList(false)} className="bg-black/30 fixed inset-0 z-20" />
       )}
-      <div className="bg-gradient-to-b from-white to-yellow-50 flex flex-col p-2 pb-2.5 border-b border-zinc-400">
+      <div className="flex flex-col p-2 pb-2.5 border-b border-zinc-400">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 relative">
             <button
@@ -87,8 +87,6 @@ export default function NewLocalItem({ number }) {
               </div>
             )}
           </div>
-
-          <b className="text-xs">{number}</b>
 
           <div className="flex gap-4">
             <button

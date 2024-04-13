@@ -1,5 +1,5 @@
 import LocalItem from './components/LocalItem'
-import NewLocalItem from './components/NewLocalItem'
+import NewItem from './components/NewItem'
 import { useLocalStorage } from '@uidotdev/usehooks'
 
 export default function App() {
@@ -7,8 +7,7 @@ export default function App() {
 
   return (
     <div className="pb-2">
-      <NewLocalItem number={1} />
-      <NewLocalItem number={2} />
+      <NewItem />
 
       {localItems
         .sort((a, b) => (a.created < b.created) - (a.created > b.created))
